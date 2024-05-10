@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACalc</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <h1 id="mainText">Activity Calculator</h1>
+        <div class="calendar">
+          <template class="templateMonth">
+            <input class="day" type="number" min="0" />
+          </template>
+        </div>
+        <div class="resultScreen">
+          <div class="daysCountDiv">
+            <h2 class="countHeader">Active days:</h2>
+            <p class="daysCount">0</p>
+          </div>
+          <div class="statsDiv">
+            <div>
+              <h2 class="numbersHeader">Maximal:</h2>
+              <p class="maxNumbers">0</p>
+            </div>
+            <div>
+              <h2 class="numbersHeader">Average:</h2>
+              <p class="averageNumbers">0</p>
+            </div>
+            <div>
+              <h2 class="numbersHeader">Minimal:</h2>
+              <p class="minNumbers">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="errorDiv"></div>
+        <div class="calcBtnDiv">
+          <button class="calcBtn" type="submit">Calculate!</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
